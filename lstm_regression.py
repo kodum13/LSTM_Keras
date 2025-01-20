@@ -10,8 +10,8 @@ from sklearn.metrics import mean_squared_error
 tf.random.set_seed(7)
 
 # Load the data
-filename = '../airline-passengers.csv'
-df = pd.read_csv('../airline-passengers.csv', usecols=[1], engine='python')
+filename = 'airline-passengers.csv'
+df = pd.read_csv('airline-passengers.csv', usecols=[1], engine='python')
 dataset = df.values.astype('float32')
 print(df.head())
 
